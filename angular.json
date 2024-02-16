@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "book-collection-ng-v17": {
+    "book-collection": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,21 +17,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/book-collection-ng-v17",
+            "outputPath": "dist/book-collection",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -62,10 +55,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "book-collection-ng-v17:build:production"
+              "buildTarget": "book-collection:build:production"
             },
             "development": {
-              "buildTarget": "book-collection-ng-v17:build:development"
+              "buildTarget": "book-collection:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,26 +66,13 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "book-collection-ng-v17:build"
+            "buildTarget": "book-collection:build"
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular-builders/jest:run",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }

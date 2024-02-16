@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="actions">
+    <button (click)="goToCreateBookForm()">Add new book</button>
+  </div>
+  <app-search-bar (searchTerm)="filterList($event)" />
+
+  <app-book-list [books]="books$ | async" (deleteBook)="deleteBook($event)" />
+</div>

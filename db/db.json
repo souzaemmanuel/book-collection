@@ -1,0 +1,76 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "publishedDate": "1925-04-10",
+      "description": "A novel depicting the glamour and decadence of the Jazz Age. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum ex vitae ullamcorper.",
+      "img": "assets/images/great_gatsby.jpg",
+      "type": "fiction"
+    },
+    {
+      "id": "3",
+      "title": "The Waste Land",
+      "author": "T.S. Eliot",
+      "publishedDate": "1922-10-01",
+      "description": "A landmark modernist poem reflecting on the disillusionment and fragmentation of post-World War I society. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum ex vitae ullamcorper.",
+      "img": "assets/images/waste_land.jpg",
+      "type": "fiction"
+    },
+    {
+      "id": "4",
+      "title": "Atlas Shrugged",
+      "author": "Ayn Rand",
+      "publishedDate": "1957-10-10",
+      "description": "A novel advocating Rand's philosophy of Objectivism, depicting a dystopian United States. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum ex vitae ullamcorper.",
+      "img": "assets/images/atlas_shrugged.jpg",
+      "type": "fiction"
+    },
+    {
+      "id": "5",
+      "title": "The Elements",
+      "author": "William Strunk Jr.",
+      "publishedDate": "1959-07-23",
+      "description": "A classic guide to English usage and writing style. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum ex vitae ullamcorper.",
+      "img": "assets/images/elements_of_style.jpg",
+      "type": "mystery"
+    },
+    {
+      "id": "6",
+      "title": "The Girl Train",
+      "author": "Paula Hawkins",
+      "publishedDate": "2015-01-13",
+      "description": "A psychological thriller about a woman who becomes entangled in a missing person investigation. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum ex vitae ullamcorper.",
+      "img": "assets/images/girl_on_train.jpg",
+      "type": "mystery"
+    },
+    {
+      "id": "7",
+      "title": "Leonardo da Vinci",
+      "author": "Walter Isaacson",
+      "publishedDate": "2017-10-17",
+      "description": "A biography of the Renaissance polymath Leonardo da Vinci. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum ex vitae ullamcorper.",
+      "img": "assets/images/leonardo_da_vinci.jpg",
+      "type": "biography"
+    },
+    {
+      "id": "8",
+      "title": "The Odyssey",
+      "author": "Homer",
+      "publishedDate": "2015-01-01",
+      "description": "An epic poem attributed to Homer, detailing the adventures of Odysseus on his journey home from the Trojan War. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum ex vitae ullamcorper.",
+      "img": "assets/images/odyssey.jpg",
+      "type": "fiction"
+    },
+    {
+      "id": "5de0",
+      "title": "Test",
+      "author": "Random author",
+      "description": "Any description Any description Any description Any description Any description Any description Any description Any description ",
+      "publishedDate": "2024-02-16",
+      "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNdMyxQQfsixXuUoqkFa0Weg-Ojv_GjtvSA59qbuDc_hZG0w2EmLioTZIh9YTpg4LDPI4hYtmMyhuUXjTvvRT_jO-UvHOJGoHGb3DFdM5LnQ0nj1uvxLEKpZL4nHwQNJB8t4PrYHjAB3P5m1bFwfHZCAcf8-rMjZhdcvZJjKz6W6RgWEQY3J6O/s1600/F2qU1KEasAEemwJ.jpg",
+      "type": "biography"
+    }
+  ]
+}

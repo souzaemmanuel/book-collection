@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="book">
+    <div
+      class="header"
+      [ngStyle]="{ 'background-image': 'url(' + book?.img + ')' }"
+    >
+      <div class="delete" (click)="deleteBook()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <title>Delete</title>
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+            d="M368 368L144 144M368 144L144 368"
+          />
+        </svg>
+      </div>
+      <div class="badge">
+        @switch (book?.type) { @case ("fiction") {
+        <div class="fiction">Fiction</div>
+        } @case ("biography") {
+        <div class="biography">Biography</div>
+        } @case ("mystery") {
+        <div class="mystery">Mystery</div>
+        } }
+      </div>
+      <div class="date">
+        {{ book?.publishedDate | date }}
+      </div>
+    </div>
+    <div class="body">
+      <div class="title">
+        {{ book?.title }}
+      </div>
+      <div class="author">
+        {{ book?.author }}
+      </div>
+      <div class="description">
+        {{ book?.description }}
+      </div>
+    </div>
+  </div>
+</div>

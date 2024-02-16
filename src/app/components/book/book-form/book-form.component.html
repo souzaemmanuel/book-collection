@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="title">
+    <h1>Add a new book</h1>
+  </div>
+  <form [formGroup]="form">
+    <div class="form-field">
+      <input placeholder="Add a title" type="text" formControlName="title" />
+      <span
+        [ngClass]="{
+          'show-error':
+            submmited && form.get('title')?.touched && form.get('title')?.errors
+        }"
+        >This field is required
+      </span>
+    </div>
+    <div class="form-field">
+      <input placeholder="Add an author" type="text" formControlName="author" />
+      <span
+        [ngClass]="{
+          'show-error':
+            submmited &&
+            form.get('author')?.touched &&
+            form.get('author')?.errors
+        }"
+        >This field is required
+      </span>
+    </div>
+    <div class="form-field">
+      <textarea
+        placeholder="Add a description"
+        type="text"
+        formControlName="description"
+      ></textarea>
+      <span
+        [ngClass]="{
+          'show-error':
+            submmited &&
+            form.get('description')?.touched &&
+            form.get('description')?.errors
+        }"
+        >This field is required
+      </span>
+    </div>
+    <div class="form-field">
+      <input
+        placeholder="Published Date"
+        type="date"
+        formControlName="publishedDate"
+      />
+      <span
+        [ngClass]="{
+          'show-error':
+            submmited &&
+            form.get('publishedDate')?.touched &&
+            form.get('publishedDate')?.errors
+        }"
+        >This field is required
+      </span>
+    </div>
+    <div class="form-field">
+      <input
+        placeholder="The image's book url must start with http:// or https://"
+        type="text"
+        formControlName="img"
+      />
+      <span
+        [ngClass]="{
+          'show-error':
+            submmited && form.get('img')?.touched && form.get('img')?.errors
+        }"
+        >This field is required
+      </span>
+    </div>
+    <div class="form-field">
+      <select name="cars" placeholder="Book Category" formControlName="type">
+        <option *ngFor="let type of bookTypes" [value]="type">
+          {{ type | titlecase }}
+        </option>
+      </select>
+      <span
+        [ngClass]="{
+          'show-error':
+            submmited && form.get('type')?.touched && form.get('type')?.errors
+        }"
+        >This field is required
+      </span>
+    </div>
+  </form>
+
+  <div class="actions">
+    <button (click)="saveBook()">Save</button>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+<div class="list-container">
+  @for (book of books; track $index) {
+  <app-book-card [book]="book" (delete)="delete($event)" />
+  }
+</div>
